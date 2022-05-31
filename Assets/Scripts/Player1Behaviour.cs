@@ -39,6 +39,7 @@ public class Player1Behaviour : MonoBehaviour
 
         if (transform.position.y <= -2){
             transform.position = new Vector3(1,1,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 
@@ -47,8 +48,10 @@ public class Player1Behaviour : MonoBehaviour
             hasJump = true;
         }
 
-        if (col.gameObject.name == "ObjectiveCylinder"){
+        if (col.gameObject.name == "ObjectiveCylinder")
+        {
             transform.position = new Vector3(1,1,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
     }
 }
