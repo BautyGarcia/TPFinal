@@ -48,7 +48,7 @@ public class Player1Behaviour : MonoBehaviour
             hasJump = true;
         }
 
-        if (col.gameObject.name == "ObjectiveCylinder")
+        if (col.gameObject.name == "ObjectiveCylinder" || col.gameObject.name == "Bala(Clone)")
         {
             transform.position = new Vector3(1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);

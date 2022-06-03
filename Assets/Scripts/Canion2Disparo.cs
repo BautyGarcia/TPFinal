@@ -21,8 +21,9 @@ public class Canion2Disparo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        clon.transform.Translate(0, movementSpeed, 0);
+
     }
+
 
     IEnumerator ExampleCoroutine()
     {
