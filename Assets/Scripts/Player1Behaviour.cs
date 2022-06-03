@@ -44,7 +44,8 @@ public class Player1Behaviour : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "Plataforma"){
+        if (col.gameObject.name == "Plataforma" || col.gameObject.name == "PlataformaVolatil")
+        {
             hasJump = true;
         }
 

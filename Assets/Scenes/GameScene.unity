@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068fcd4ca643c0d4dac6a3d75bbe18e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpForce: 20
+  JumpForce: 10
   movementSpeed: 0.1
 --- !u!1 &418443787
 GameObject:
@@ -643,6 +643,7 @@ GameObject:
   - component: {fileID: 462725447}
   - component: {fileID: 462725446}
   - component: {fileID: 462725445}
+  - component: {fileID: 462725449}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -722,6 +723,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &462725449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462725444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &481425437
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +748,7 @@ GameObject:
   - component: {fileID: 481425440}
   - component: {fileID: 481425439}
   - component: {fileID: 481425438}
+  - component: {fileID: 481425442}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -813,6 +828,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481425442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481425437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &499207410
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +944,7 @@ GameObject:
   - component: {fileID: 580309122}
   - component: {fileID: 580309121}
   - component: {fileID: 580309120}
+  - component: {fileID: 580309124}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -995,6 +1024,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580309124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580309119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &730400373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,6 +1226,7 @@ GameObject:
   - component: {fileID: 799945204}
   - component: {fileID: 799945203}
   - component: {fileID: 799945202}
+  - component: {fileID: 799945206}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -1263,6 +1306,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799945206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799945201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &827747766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1573,7 @@ GameObject:
   - component: {fileID: 970957135}
   - component: {fileID: 970957134}
   - component: {fileID: 970957133}
+  - component: {fileID: 970957137}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -1596,6 +1653,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &970957137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970957132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1251766020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,6 +1860,7 @@ GameObject:
   - component: {fileID: 1328076194}
   - component: {fileID: 1328076193}
   - component: {fileID: 1328076192}
+  - component: {fileID: 1328076196}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -1869,6 +1940,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328076196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328076191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1464536180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,6 +1965,7 @@ GameObject:
   - component: {fileID: 1464536183}
   - component: {fileID: 1464536182}
   - component: {fileID: 1464536181}
+  - component: {fileID: 1464536185}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -1960,6 +2045,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464536185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464536180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1650135999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,6 +2070,7 @@ GameObject:
   - component: {fileID: 1650136002}
   - component: {fileID: 1650136001}
   - component: {fileID: 1650136000}
+  - component: {fileID: 1650136004}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2051,6 +2150,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1650136004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650135999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1736838151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,6 +2357,7 @@ GameObject:
   - component: {fileID: 1829618637}
   - component: {fileID: 1829618636}
   - component: {fileID: 1829618635}
+  - component: {fileID: 1829618639}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2324,6 +2437,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829618639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829618634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1837392288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2462,7 @@ GameObject:
   - component: {fileID: 1837392291}
   - component: {fileID: 1837392290}
   - component: {fileID: 1837392289}
+  - component: {fileID: 1837392293}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2415,6 +2542,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837392293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837392288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &1861857295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2532,6 +2672,7 @@ GameObject:
   - component: {fileID: 1883287975}
   - component: {fileID: 1883287974}
   - component: {fileID: 1883287973}
+  - component: {fileID: 1883287977}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2610,6 +2751,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 882695228}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1883287977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883287972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
+--- !u!1 &1932546166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932546169}
+  - component: {fileID: 1932546168}
+  - component: {fileID: 1932546167}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1932546167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932546166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1932546168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932546166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1932546169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932546166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960940235
 GameObject:
@@ -2765,6 +2985,7 @@ GameObject:
   - component: {fileID: 2041971120}
   - component: {fileID: 2041971119}
   - component: {fileID: 2041971118}
+  - component: {fileID: 2041971122}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2844,6 +3065,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041971122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041971117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &2062265081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2856,6 +3090,7 @@ GameObject:
   - component: {fileID: 2062265084}
   - component: {fileID: 2062265083}
   - component: {fileID: 2062265082}
+  - component: {fileID: 2062265086}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -2935,6 +3170,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062265086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062265081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &2114564403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,6 +3195,7 @@ GameObject:
   - component: {fileID: 2114564406}
   - component: {fileID: 2114564405}
   - component: {fileID: 2114564404}
+  - component: {fileID: 2114564408}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -3026,6 +3275,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114564408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114564403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &2124485630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,6 +3382,7 @@ GameObject:
   - component: {fileID: 2131194412}
   - component: {fileID: 2131194411}
   - component: {fileID: 2131194410}
+  - component: {fileID: 2131194414}
   m_Layer: 0
   m_Name: PlataformaVolatil
   m_TagString: Untagged
@@ -3199,6 +3462,19 @@ Transform:
   m_Father: {fileID: 882695228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131194414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131194409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6eec6813645bff47a0cbf377d33e6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOn: 0
 --- !u!1 &2137699557
 GameObject:
   m_ObjectHideFlags: 0

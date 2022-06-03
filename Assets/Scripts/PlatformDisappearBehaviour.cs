@@ -10,6 +10,8 @@ public class PlatformDisappearBehaviour : MonoBehaviour
     void Start()
     {
         StartCoroutine(PlatformDisappearance());
+
+        
         BoolDecider = Random.Range(1, 3);
 
         if (BoolDecider == 1) {
@@ -19,12 +21,13 @@ public class PlatformDisappearBehaviour : MonoBehaviour
         {
             isOn = false;
         }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+  
     }
 
     IEnumerator PlatformDisappearance()
@@ -33,17 +36,20 @@ public class PlatformDisappearBehaviour : MonoBehaviour
         {
             if (isOn)
             {
-                gameObject.SetActive(false);
+                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                gameObject.GetComponent<BoxCollider>().enabled = true;
                 isOn = false;
-                yield return new WaitForSeconds(3);
             }
             else
             {
-                gameObject.SetActive(true);
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
                 isOn = true;
-                yield return new WaitForSeconds(3);
             }
 
+            yield return new WaitForSeconds(3);
         }
+       
     }
+
 }
