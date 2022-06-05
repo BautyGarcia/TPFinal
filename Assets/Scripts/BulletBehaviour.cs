@@ -15,5 +15,9 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         transform.Translate(0, movementSpeed, 0);
+
+        if (gameObject.transform.position.z >= -32){
+            Destroy(gameObject,0);
+        }
     }
 }
