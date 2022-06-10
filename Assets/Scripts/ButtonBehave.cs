@@ -14,7 +14,7 @@ public class ButtonBehave : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CantRondas = 0;
+        
     }
 
     // Update is called once per frame
@@ -25,13 +25,21 @@ public class ButtonBehave : MonoBehaviour
         {
             TimeLeft = TotalTime - Mathf.Floor(Time.time);
             TimeText.text = TimeLeft.ToString();
+        } else {
+            return;
         }
         
     }
 
     public void CanvasSetActive()
     {
-        Canvas.SetActive(false);
-        CantRondas = int.Parse(InputText.text);
+        if (InputText.text == ""){
+            CantRondas = 3;
+            Canvas.SetActive(false);
+        } else {
+            Canvas.SetActive(false);
+            CantRondas = int.Parse(InputText.text);
+        }
+
     }
 }

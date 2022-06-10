@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player1Behaviour : MonoBehaviour
 {   
@@ -9,11 +10,14 @@ public class Player1Behaviour : MonoBehaviour
     bool hasJump = true;
     public float movementSpeed;
     int CantRondas = 0;
+    public Text OutPutText;
+    int RondasGanadas = 1;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         movementSpeed = 0.1f;
+        StartCoroutine(CantRondasTimer());
     }
 
     // Update is called once per frame
@@ -41,6 +45,9 @@ public class Player1Behaviour : MonoBehaviour
             transform.position = new Vector3(1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
+        if (RondasGanadas == CantRondas){
+            OutPutText.text = "¡Player 1 Gana!";
+        }
     }
 
     void OnCollisionEnter(Collision col) {
@@ -54,11 +61,17 @@ public class Player1Behaviour : MonoBehaviour
             transform.position = new Vector3(1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
+        if (col.gameObject.name == "Meta"){
+            RondasGanadas++;
+            transform.position = new Vector3(1,1,0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
 
     IEnumerator CantRondasTimer()
     {
         yield return new WaitForSeconds(30);
+        RondasGanadas = 0;
         CantRondas = ButtonBehave.CantRondas;
     }
 }
