@@ -8,6 +8,7 @@ public class Player1Behaviour : MonoBehaviour
     Rigidbody rb;
     bool hasJump = true;
     public float movementSpeed;
+    int CantRondas = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +37,6 @@ public class Player1Behaviour : MonoBehaviour
         if (Input.GetKey(KeyCode.D)){
             transform.Translate(-movementSpeed,0,0);
         }
-
         if (transform.position.y <= -2){
             transform.position = new Vector3(1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -54,5 +54,11 @@ public class Player1Behaviour : MonoBehaviour
             transform.position = new Vector3(1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
+    }
+
+    IEnumerator CantRondasTimer()
+    {
+        yield return new WaitForSeconds(30);
+        CantRondas = ButtonBehave.CantRondas;
     }
 }
