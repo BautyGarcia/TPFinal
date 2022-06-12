@@ -71,7 +71,7 @@ public class Player2Behaviour : MonoBehaviour
 
     IEnumerator CantRondasTimer()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(11);
         RondasGanadas = 0;
         CantRondas = ButtonBehave.CantRondas;
     }

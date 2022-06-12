@@ -9,7 +9,7 @@ public class ButtonBehave : MonoBehaviour
     public Text InputText;
     public static int CantRondas;
     public Text TimeText;
-    int TotalTime = 30;
+    int TotalTime = 10;
     float TimeLeft = 0;
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,8 @@ public class ButtonBehave : MonoBehaviour
             TimeLeft = TotalTime - Mathf.Floor(Time.time);
             TimeText.text = TimeLeft.ToString();
         } else {
-            return;
+            CantRondas = 3;
+            Canvas.SetActive(false);
         }
         
     }

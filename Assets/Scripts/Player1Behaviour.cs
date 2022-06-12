@@ -11,7 +11,9 @@ public class Player1Behaviour : MonoBehaviour
     public float movementSpeed;
     int CantRondas = 0;
     public Text OutPutText;
-    int RondasGanadas = 1;
+    public int RondasGanadas = 1;
+
+    public AudioManager miAM;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class Player1Behaviour : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)){
             if (hasJump){
+                miAM.PlaySalto();
                 rb.AddForce(Vector3.up * JumpForce,ForceMode.Impulse);
                 hasJump = false;
             }
@@ -70,8 +73,9 @@ public class Player1Behaviour : MonoBehaviour
 
     IEnumerator CantRondasTimer()
     {
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(11);
         RondasGanadas = 0;
         CantRondas = ButtonBehave.CantRondas;
+        Debug.Log(CantRondas);
     }
 }
