@@ -13,6 +13,9 @@ public class ButtonBehave : MonoBehaviour
     int TotalTime = 10;
     float TimeLeft = 0;
     public AudioManager miAM;
+    public GameObject cubo;
+    GameObject clon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,5 +53,12 @@ public class ButtonBehave : MonoBehaviour
             miAM.PlayTheme();
         }
 
+    }
+
+    public void Celebration(){
+        for (int i = 0; i < 30; i++){
+            clon = Instantiate(cubo);
+            Destroy(clon,5);
+        }
     }
 }

@@ -419,8 +419,6 @@ MonoBehaviour:
   JumpForce: 10
   movementSpeed: 0.1
   OutPutText: {fileID: 827635750}
-  cuboWhile: {fileID: 2698140246990653431, guid: 5930f56442e41464081fe085fc8ba565,
-    type: 3}
   miAM: {fileID: 1364909650}
 --- !u!1 &357184549
 GameObject:
@@ -653,8 +651,6 @@ MonoBehaviour:
   movementSpeed: 0.1
   OutPutText: {fileID: 827635750}
   RondasGanadas: 1
-  cuboWhile: {fileID: 2698140246990653431, guid: 5930f56442e41464081fe085fc8ba565,
-    type: 3}
   miAM: {fileID: 1364909650}
 --- !u!1 &418443787
 GameObject:
@@ -1517,6 +1513,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 774627390}
+        m_MethodName: Celebration
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &774627388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1568,6 +1575,7 @@ MonoBehaviour:
   InputText: {fileID: 1106742908}
   TimeText: {fileID: 1528431372}
   miAM: {fileID: 1364909650}
+  cubo: {fileID: 2698140246990653431, guid: 5930f56442e41464081fe085fc8ba565, type: 3}
 --- !u!1 &784177240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,7 +1708,7 @@ RectTransform:
   - {fileID: 1528431371}
   - {fileID: 1271517061}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1903,7 +1911,7 @@ RectTransform:
   m_Children:
   - {fileID: 827635749}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

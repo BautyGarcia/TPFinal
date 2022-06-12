@@ -12,7 +12,6 @@ public class Player1Behaviour : MonoBehaviour
     int CantRondas = 0;
     public Text OutPutText;
     public int RondasGanadas = 1;
-    public GameObject cuboWhile;
 
     public AudioManager miAM;
 
@@ -54,10 +53,6 @@ public class Player1Behaviour : MonoBehaviour
             if (RondasGanadas == CantRondas){
                 OutPutText.text = "¡Player 1 Gana!";
                 
-                for (int i = 0; i < 1; i++)
-                {
-                    Instantiate(cuboWhile);
-                }
             }
 
         }
