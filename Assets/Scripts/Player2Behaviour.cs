@@ -12,6 +12,10 @@ public class Player2Behaviour : MonoBehaviour
     int CantRondas = 0;
     public Text OutPutText;
     int RondasGanadas = 1;
+    public GameObject cuboWhile;
+    
+    public AudioManager miAM;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,31 +27,40 @@ public class Player2Behaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return)){
-            if (hasJump){
-                rb.AddForce(Vector3.up * JumpForce,ForceMode.Impulse);
-                hasJump = false;
+        if (ButtonBehave.GameStart == true){
+            if (Input.GetKeyDown(KeyCode.Return)){
+                if (hasJump){
+                    miAM.PlaySalto();
+                    rb.AddForce(Vector3.up * JumpForce,ForceMode.Impulse);
+                    hasJump = false;
+                }
+            }
+            if (Input.GetKey(KeyCode.UpArrow)){
+                transform.Translate(0,0,-movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.DownArrow)){
+                transform.Translate(0,0,movementSpeed);
+            }
+            if (Input.GetKey(KeyCode.LeftArrow)){
+                transform.Translate(movementSpeed,0,0);
+            }
+            if (Input.GetKey(KeyCode.RightArrow)){
+                transform.Translate(-movementSpeed,0,0);
+            }
+            if (transform.position.y <= -2){
+                transform.position = new Vector3(-1,1,0);
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            if (RondasGanadas == CantRondas){
+                OutPutText.text = "¡Player 2 Gana!";
+
+                for (int i = 0; i < 1; i++)
+                {
+                    Instantiate(cuboWhile);
+                }
             }
         }
-        if (Input.GetKey(KeyCode.UpArrow)){
-            transform.Translate(0,0,-movementSpeed);
-        }
-        if (Input.GetKey(KeyCode.DownArrow)){
-            transform.Translate(0,0,movementSpeed);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow)){
-            transform.Translate(movementSpeed,0,0);
-        }
-        if (Input.GetKey(KeyCode.RightArrow)){
-            transform.Translate(-movementSpeed,0,0);
-        }
-        if (transform.position.y <= -2){
-            transform.position = new Vector3(-1,1,0);
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        if (RondasGanadas == CantRondas){
-            OutPutText.text = "¡Player 2 Gana!";
-        }
+
 
     }
 
@@ -75,5 +88,8 @@ public class Player2Behaviour : MonoBehaviour
         RondasGanadas = 0;
         CantRondas = ButtonBehave.CantRondas;
     }
+
+
+
 }
 

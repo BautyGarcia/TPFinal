@@ -8,9 +8,11 @@ public class ButtonBehave : MonoBehaviour
     public GameObject Canvas;
     public Text InputText;
     public static int CantRondas;
+    public static bool GameStart = false;
     public Text TimeText;
     int TotalTime = 10;
     float TimeLeft = 0;
+    public AudioManager miAM;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class ButtonBehave : MonoBehaviour
         } else {
             CantRondas = 3;
             Canvas.SetActive(false);
+            GameStart = true;
+            miAM.PlayTheme();
         }
         
     }
@@ -37,9 +41,13 @@ public class ButtonBehave : MonoBehaviour
         if (InputText.text == ""){
             CantRondas = 3;
             Canvas.SetActive(false);
+            GameStart = true;
+            miAM.PlayTheme();
         } else {
             Canvas.SetActive(false);
             CantRondas = int.Parse(InputText.text);
+            GameStart = true;
+            miAM.PlayTheme();
         }
 
     }
