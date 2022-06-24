@@ -15,24 +15,31 @@ public class Objetivo1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
+
         if (goUp){
-            transform.Translate(0.025f,0,0);
+            transform.Translate(0, 0.025f, 0);
+            
 
             if (transform.position.y >= 3){
                 goUp = false;
+                
             }
 
         } else {
-            transform.Translate(-0.025f,0,0);
+            transform.Translate(0, -0.025f, 0);
+           
 
             if (transform.position.y <= -1){
                 goUp = true;
+                
             }
 
         }
 
     }
+
 
 
 }

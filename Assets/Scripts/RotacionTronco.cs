@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBehaviour : MonoBehaviour
+public class RotacionTronco : MonoBehaviour
 {
-    public float movementSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        movementSpeed = 0.1f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0, 0, movementSpeed);
-
-        if (gameObject.transform.position.z >= -32f){
-            Destroy(gameObject, 0);
+        if (transform.eulerAngles.z >= 360)
+        {
+            transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        else
+        {
+            transform.Rotate(1, 0, 0);
         }
     }
 }

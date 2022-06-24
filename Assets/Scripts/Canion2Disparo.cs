@@ -6,14 +6,12 @@ public class Canion2Disparo : MonoBehaviour
 {
     public GameObject bala;
     public Transform spawn;
-    public float movementSpeed;
     public GameObject spawnPoint;
     GameObject clon;
 
     // Start is called before the first frame update
     void Start()
     {
-        movementSpeed = 0.1f;
         StartCoroutine(ExampleCoroutine());
         spawnPoint.SetActive(false);
     }

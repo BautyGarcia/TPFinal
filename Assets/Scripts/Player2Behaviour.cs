@@ -12,7 +12,9 @@ public class Player2Behaviour : MonoBehaviour
     int CantRondas = 0;
     public Text OutPutText;
     int RondasGanadas = 1;
-    
+    public Text cantRondas;
+    public GameObject canvas;
+
     public AudioManager miAM;
 
     // Start is called before the first frame update
@@ -53,18 +55,20 @@ public class Player2Behaviour : MonoBehaviour
             if (RondasGanadas == CantRondas){
                 OutPutText.text = "¡Player 2 Gana!";
             }
+
+            cantRondas.text = RondasGanadas.ToString();
         }
 
 
     }
 
     void OnCollisionEnter(Collision col) {
-        if (col.gameObject.name == "Plataforma" || col.gameObject.name == "PlataformaVolatil")
+        if (col.gameObject.name == "Plataforma" || col.gameObject.name == "PlataformaVolatil" || col.gameObject.tag == "Cannon")
         {
             hasJump = true;
         }
 
-        if (col.gameObject.name == "ObjectiveCylinder" || col.gameObject.name == "Bala(Clone)")
+        if (col.gameObject.name == "Tronco" || col.gameObject.name == "Misil Variant(Clone)")
         {
             transform.position = new Vector3(-1,1,0);
             transform.eulerAngles = new Vector3(0, 0, 0);
@@ -81,6 +85,7 @@ public class Player2Behaviour : MonoBehaviour
         yield return new WaitForSeconds(11);
         RondasGanadas = 0;
         CantRondas = ButtonBehave.CantRondas;
+        canvas.SetActive(true);
     }
 
 
