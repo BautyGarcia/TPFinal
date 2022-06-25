@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,8 +27,7 @@ public class Canion1Disparo : MonoBehaviour
         while (true)
         {
             clon = Instantiate(bala, spawn.transform.position, spawn.transform.rotation);
-            yield return new WaitForSeconds(3);
-            Destroy(clon, 0);
+            yield return new WaitForSeconds(3);         
         }
     }
 

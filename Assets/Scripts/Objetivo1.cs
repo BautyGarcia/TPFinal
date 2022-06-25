@@ -19,7 +19,7 @@ public class Objetivo1 : MonoBehaviour
 
 
         if (goUp){
-            transform.Translate(0, 0.025f, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y + 0.025f, transform.position.z);
             
 
             if (transform.position.y >= 3){
@@ -28,7 +28,7 @@ public class Objetivo1 : MonoBehaviour
             }
 
         } else {
-            transform.Translate(0, -0.025f, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y - 0.025f, transform.position.z);
            
 
             if (transform.position.y <= -1){

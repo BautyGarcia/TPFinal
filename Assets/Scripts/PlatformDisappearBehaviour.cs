@@ -30,13 +30,31 @@ public class PlatformDisappearBehaviour : MonoBehaviour
             }
             else
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
+                StartCoroutine(Titilar());
+
             }
 
-            yield return new WaitForSeconds(3);
+            yield return new WaitForSeconds(5);
         }
        
+    }
+
+    IEnumerator Titilar(){
+        for (int i = 0; i < 3; i++)
+        {
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+
+            yield return new WaitForSeconds(0.5f);
+
+            gameObject.GetComponent<MeshRenderer>().enabled = true;
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+
+            yield return new WaitForSeconds(0.5f);
+
+            gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+        }
     }
 
 }

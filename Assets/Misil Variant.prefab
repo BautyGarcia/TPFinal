@@ -42,6 +42,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 0
+  cubo: {fileID: 2698140246990653431, guid: 5930f56442e41464081fe085fc8ba565, type: 3}
 --- !u!1001 &1308363123845922096
 PrefabInstance:
   m_ObjectHideFlags: 0
